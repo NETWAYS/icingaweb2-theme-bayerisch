@@ -1,0 +1,70 @@
+/*
+ * The main interface color for Icinga
+ * Used for:
+ *  - Header background
+ *  - Links and buttons
+ *  - Highlighting
+ */
+@icinga-blue: #0099d5;
+
+#login {
+  background-image: url('../img/bayerisch/login_page.png');
+
+  input[type=submit] {
+    background-color: #0099d5;
+  }
+  label {
+    color: #0099d5;
+  }
+}
+
+/*
+ * Logo display on login page
+ */
+#icinga-logo {
+  // TODO
+  background-image: url('../img/bayerisch/icinga_logo_w.png');
+
+  &.invert {
+    // The logo shown on white background (DEFAULT)
+    background-image: url('../img/bayerisch/icinga_logo_b.png');
+  }
+}
+
+/*
+ * The logo container in the main menu
+ * Adjusting the padding here to have a larger logo
+ */
+#header-logo-container {
+  padding: 0.5em;
+}
+/*
+ * Logo link shown in the main menu
+ *
+ * Background below is @icinga-blue
+ */
+#header-logo {
+  background-image: url('../img/bayerisch/icinga_logo_w.png');
+}
+/*
+ * Logo on mobile devices
+ */
+#mobile-menu-logo {
+  background-image: url('../img/bayerisch/icinga_logo_w.png');
+}
+
+#layout:not(.minimal-layout).sidebar-collapsed #header-logo {
+  background-image: url('../img/bayerisch/icinga_logo_w.png');
+}
+
+#menu {
+  background-image: url('../img/bayerisch/sidebar.png');
+  background-position: right bottom;
+  background-repeat: no-repeat;
+
+  > nav, > form {
+    background-color: #494949;
+  }
+  
+  #body { cursor:wait; }
+}
