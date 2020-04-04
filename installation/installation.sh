@@ -1,3 +1,5 @@
+#!/usr/bin/env bash
+
 #Copy the existing german language and rename it
 cp /usr/share/i18n/locales/de_DE /usr/share/i18n/locales/de_BY 2> /dev/null
 localedef -i de_BY -f UTF-8 de_BY.UTF-8 2> /dev/null
